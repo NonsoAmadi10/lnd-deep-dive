@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LND Deep Dive — A Security Engineer's Guide</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A comprehensive guide mapping Mastering the Lightning Network to LND source code, with security findings">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <style>
+    :root {
+      --base-font-size: 16px;
+      --theme-color: #f7931a;
+      --sidebar-nav-link-color--active: #f7931a;
+      --sidebar-nav-link-border-color--active: #f7931a;
+      --link-color: #f7931a;
+      --link-color--hover: #ffa940;
+      --blockquote-border-color: #f7931a;
+      --code-theme-background: #1a1a2e;
+      --code-inline-background: #2a2a3e;
+      --sidebar-width: 280px;
+    }
+    .sidebar-nav > ul > li > a {
+      font-weight: bold;
+    }
+    .markdown-section h1 {
+      border-bottom: 2px solid #f7931a;
+      padding-bottom: 0.3em;
+    }
+    .markdown-section table {
+      display: table;
+      width: 100%;
+    }
+    .app-name-link img {
+      max-width: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .cover-main {
+      background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1a1a2e 100%) !important;
+    }
+    .cover-main h1 {
+      color: #f7931a !important;
+    }
+    /* Security finding severity badges */
+    .markdown-section code {
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '⚡ LND Deep Dive',
+      repo: 'https://github.com/NonsoAmadi10/lnd-deep-dive',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        placeholder: 'Search the guide...',
+        noData: 'No results found',
+        paths: 'auto'
+      },
+      pagination: {
+        previousText: '← Previous',
+        nextText: 'Next →',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
+      coverpage: true,
+      themeColor: '#f7931a'
+    }
+  </script>
+  <!-- Docsify core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- Syntax highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+</body>
+</html>
